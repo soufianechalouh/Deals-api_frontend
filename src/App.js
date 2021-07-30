@@ -2,7 +2,7 @@ import "tailwindcss/dist/base.css";
 import "styles/globalStyles.css";
 import React from "react";
 import { css } from "styled-components/macro"; //eslint-disable-line
-import SaaSProductLandingPage from "demos/SaaSProductLandingPage.js";
+import APILandingPage from "./demos/APILandingPage";
 
 
 export default function App() {
@@ -11,7 +11,7 @@ export default function App() {
 
 
   return (
-    <SaaSProductLandingPage/>
+    <APILandingPage/>
   );
 }
 
