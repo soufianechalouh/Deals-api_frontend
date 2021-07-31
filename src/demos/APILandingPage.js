@@ -17,6 +17,7 @@ import prototypeIllustrationImageSrc from "../images/prototype-illustration.svg"
 import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
 import FAQ from "../components/faqs/SingleCol";
+import GetStarted from "../components/cta/GetStarted";
 
 export default () => {
   const Subheading = tw.span`tracking-wider text-sm font-medium`;
@@ -123,6 +124,11 @@ export default () => {
           </>
         }
         description = "And we have got answers to all of them"
+      />
+      <GetStarted
+          text="Start using DealsAPI right now"
+          primaryLinkText="Login"
+          secondaryLinkText = "Sign up"
       />
       <Footer />
     </AnimationRevealPage>
