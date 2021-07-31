@@ -16,6 +16,7 @@ import macHeroScreenshotImageSrc from "../images/hero-screenshot-2.png";
 import prototypeIllustrationImageSrc from "../images/prototype-illustration.svg";
 import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
+import FAQ from "../components/faqs/SingleCol";
 
 export default () => {
   const Subheading = tw.span`tracking-wider text-sm font-medium`;
@@ -91,6 +92,37 @@ export default () => {
           </>
         }
         description = "and of course, you can come up with better ways"
+      />
+        <FAQ
+        subheading={<Subheading>FAQS</Subheading>}
+        faqs={[
+            {
+                question: "Is the API free?",
+                answer:
+                    "Yes, so far."
+            },
+            {
+                question: "Is there / Will there be a paid plan?",
+                answer:
+                    "To this date, there is no plans to monetize access to the API in the near future."
+            },
+            {
+                question: "How is this project financed ?",
+                answer:
+                    " I am personally financing the hosting and maintenance. You can donate to the project in Paypal, it would encourage me to do more."
+            },
+            {
+                question: "Can we ask for other features or some other projects ?",
+                answer:
+                    "Yes, feel free to contact me about your project."
+            }
+        ]}
+        heading={
+          <>
+            You have <HighlightedText>Questions ?</HighlightedText>
+          </>
+        }
+        description = "And we have got answers to all of them"
       />
       <Footer />
     </AnimationRevealPage>
