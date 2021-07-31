@@ -70,14 +70,19 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
   const defaultCards = [
     {
       imageSrc: ShieldIconImage,
-      title: "Secure",
-      description: "We strictly only deal with vendors that provide top notch security."
+      title: "Deals App",
+      description: "Create a mobile app delivering the latest deals. Monetize it with ads or/and referral."
     },
-    { imageSrc: SupportIconImage, title: "24/7 Support" },
-    { imageSrc: CustomizeIconImage, title: "Customizable" },
-    { imageSrc: ReliableIconImage, title: "Reliable" },
-    { imageSrc: FastIconImage, title: "Fast" },
-    { imageSrc: SimpleIconImage, title: "Easy" }
+    { imageSrc: SupportIconImage, title: "Blog",
+      description: "Many blogs are publishing deals with referral link manually. Automate everything using this API." },
+    { imageSrc: CustomizeIconImage, title: "Mailing list" ,
+      description: "Send awesome deals to your mailing list."},
+    { imageSrc: ReliableIconImage, title: "Whatsapp group",
+      description: "Start a private Whatsapp group. Monetize it with a monthly subscription " },
+    { imageSrc: FastIconImage, title: "Dropship/ecom",
+      description: "Buy discounted items, and list them for a higher price." },
+    { imageSrc: SimpleIconImage, title: "Save",
+      description: "Save on what you're buying" }
   ];
 
   if (!cards) cards = defaultCards;

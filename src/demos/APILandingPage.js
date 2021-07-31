@@ -3,13 +3,11 @@ import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Hero from "components/hero/TwoColumnOneButton.js";
-import Features from "components/features/ThreeColSimple.js";
 import MainFeature from "components/features/TwoColWithButton.js";
 import MainFeature2 from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
 import TabGrid from "components/cards/TabCardGrid.js";
-import Testimonial from "components/testimonials/ThreeColumnWithProfileImage.js";
-import DownloadApp from "components/cta/DownloadApp.js";
 import Footer from "components/footers/FiveColumnWithInputForm.js";
+import Features from "components/features/ThreeColWithSideImage.js";
 
 
 import heroScreenshotImageSrc from "../images/hero-screenshot-1.png";
@@ -23,7 +21,6 @@ export default () => {
   const Subheading = tw.span`tracking-wider text-sm font-medium`;
   const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block`;
   const HighlightedTextInverse = tw.span`bg-gray-100 text-primary-500 px-4 transform -skew-x-12 inline-block`;
-  const Description = tw.span`inline-block mt-8`;
   const imageCss = tw`rounded-4xl`;
   return (
     <AnimationRevealPage>
@@ -65,9 +62,10 @@ export default () => {
         subheading={<Subheading>VALUES</Subheading>}
         heading={
           <>
-            We Always Abide by Our <HighlightedText>Principles.</HighlightedText>
+            We offer more than just a <HighlightedText> Deals API.</HighlightedText>
           </>
         }
+        description = "Need a wordpress deals website, linked to our website, ready to be monetized with Amazon/Walmart affiliates? We can deliver that very fast. We also offer other software development services. We're experts in building reliable, structured APIs and web apps using Django and Django Rest Framework, and everything Python related."
         imageSrc={prototypeIllustrationImageSrc}
         showDecoratorBlob={false}
         features={[
@@ -85,39 +83,14 @@ export default () => {
           }
         ]}
       />
-      {/*<MainFeature2*/}
-      {/*  subheading={<Subheading>A Reputed Brand</Subheading>}*/}
-      {/*  heading={<>Why <HighlightedText>Choose Us ?</HighlightedText></>}*/}
-      {/*  statistics={[*/}
-      {/*    {*/}
-      {/*      key: "Orders",*/}
-      {/*      value: "94000+",*/}
-      {/*    },*/}
-      {/*    {*/}
-      {/*      key: "Customers",*/}
-      {/*      value: "11000+"*/}
-      {/*    },*/}
-      {/*    {*/}
-      {/*      key: "Chefs",*/}
-      {/*      value: "1500+"*/}
-      {/*    }*/}
-      {/*  ]}*/}
-      {/*  primaryButtonText="Order Now"*/}
-      {/*  primaryButtonUrl="https://order.now.com"*/}
-      {/*  imageInsideDiv={false}*/}
-      {/*  imageSrc="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEzNzI2fQ&auto=format&fit=crop&w=768&q=80"*/}
-      {/*  imageCss={Object.assign(tw`bg-cover`, imageCss)}*/}
-      {/*  imageContainerCss={tw`md:w-1/2 h-auto`}*/}
-      {/*  imageDecoratorBlob={true}*/}
-      {/*  imageDecoratorBlobCss={tw`left-1/2 md:w-32 md:h-32 -translate-x-1/2 opacity-25`}*/}
-      {/*  textOnLeft={true}*/}
-      {/*/>*/}
-      <Testimonial
-        subheading=""
-        heading={<>Customers <HighlightedText>Love Us.</HighlightedText></>}
-      />
-      <DownloadApp
-        text={<>People around you are ordering delicious meals using the <HighlightedTextInverse>Treact App.</HighlightedTextInverse></>}
+      <Features
+        subheading={<Subheading>Monetizing</Subheading>}
+        heading={
+          <>
+            Ideas to use the API and <HighlightedText>Monetize it</HighlightedText>
+          </>
+        }
+        description = "and of course, you can come up with better ways"
       />
       <Footer />
     </AnimationRevealPage>
