@@ -6,7 +6,7 @@ import Hero from "components/hero/TwoColumnOneButton.js";
 import MainFeature from "components/features/TwoColWithButton.js";
 import MainFeature2 from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
 import TabGrid from "components/cards/TabCardGrid.js";
-import Footer from "components/footers/FiveColumnWithInputForm.js";
+import Footer from "components/footers/MiniCenteredFooter.js";
 import Features from "components/features/ThreeColWithSideImage.js";
 
 
@@ -22,7 +22,6 @@ import GetStarted from "../components/cta/GetStarted";
 export default () => {
   const Subheading = tw.span`tracking-wider text-sm font-medium`;
   const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block`;
-  const HighlightedTextInverse = tw.span`bg-gray-100 text-primary-500 px-4 transform -skew-x-12 inline-block`;
   const imageCss = tw`rounded-4xl`;
   return (
     <AnimationRevealPage>
