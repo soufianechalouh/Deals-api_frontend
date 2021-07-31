@@ -63,12 +63,12 @@ export default ({
       description: "Create an account with us using Google or Facebook."
     },
     {
-      heading: "Download",
-      description: "Browse and Download the template that you like from the marketplace."
+      heading: "Get Token",
+      description: "Log in to your dashboard and get your authentication token."
     },
     {
-      heading: "Run",
-      description: "Follow the instructions to setup and customize the template to your needs."
+      heading: "Send requests",
+      description: "Send requests and get the lates deals from our Rest API. Don't forget to pass your token on the request header."
     }
   ];
 
